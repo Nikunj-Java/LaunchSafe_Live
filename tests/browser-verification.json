@@ -1,0 +1,20 @@
+{
+  "transport": "in-memory engine bridge; actual HTTP tested separately",
+  "checks": [
+    "Host setup/start and independent viewer auto-transition: PASS (simulated transport)",
+    "Publish bid updates independent mobile view: PASS",
+    "Sale, exact wallet deduction and projector SOLD state: PASS",
+    "Second copy and instructor refund UI: PASS",
+    "Portfolio at 320, 360, 390, 430 and 768px: no horizontal page overflow",
+    "Three sealed reveals lead to debrief: PASS",
+    "45-second team spotlight and reasoned bonus UI: PASS",
+    "Bank round and progressive standings: PASS",
+    "Simulated connection failure and automatic polling recovery: PASS",
+    "Four-round UI flow reaches final podium without double banking: PASS",
+    "All four team tabs at five widths: no horizontal page overflow",
+    "Instructor QR sheet, private answer-key and backup views render: PASS",
+    "JavaScript page errors across all three roles: 0"
+  ],
+  "errors": [],
+  "complete": true
+}

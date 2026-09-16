@@ -1,0 +1,395 @@
+[
+  {
+    "id": 1,
+    "name": "Mobile payment app launch",
+    "context": [
+      "Your teams are building a mobile payment app scheduled to launch in 4 weeks at a national fintech event.",
+      "The CEO demands every promised feature must go live.",
+      "Yesterday, the government introduced new data compliance laws that could affect your app's payment flow and storage practices."
+    ],
+    "list": null,
+    "risks": [
+      {
+        "id": "R1",
+        "d": "Data compliance regulation may block app release."
+      },
+      {
+        "id": "R2",
+        "d": "Integration with payment gateway is unstable."
+      },
+      {
+        "id": "R3",
+        "d": "High workload is causing team burnout."
+      },
+      {
+        "id": "R4",
+        "d": "Several features are untested but are still in scope."
+      },
+      {
+        "id": "R5",
+        "d": "Stakeholders demand last-minute UI changes."
+      }
+    ],
+    "mits": [
+      {
+        "id": "M1",
+        "d": "Isolate unstable payment feature from MVP",
+        "p": 2500
+      },
+      {
+        "id": "M2",
+        "d": "Enforce code freeze on untested modules",
+        "p": 2000
+      },
+      {
+        "id": "M3",
+        "d": "Allow only minor UI tweaks with formal impact signoff",
+        "p": 1500
+      },
+      {
+        "id": "M4",
+        "d": "Hire external legal team to assess data compliance",
+        "p": 3500
+      },
+      {
+        "id": "M5",
+        "d": "Add automated test coverage for critical workflows (partial)",
+        "p": 2000
+      },
+      {
+        "id": "M6",
+        "d": "Conduct a dry-run deployment and rollback test",
+        "p": 1800
+      },
+      {
+        "id": "M7",
+        "d": "Introduce team wellness check-ins and reduce sprint WIP",
+        "p": 1000
+      }
+    ],
+    "map": {
+      "R1": {
+        "high": "M4",
+        "partial": "M1"
+      },
+      "R2": {
+        "high": "M1",
+        "partial": "M6"
+      },
+      "R3": {
+        "high": "M7",
+        "partial": "M2"
+      },
+      "R4": {
+        "high": "M2",
+        "partial": "M5"
+      },
+      "R5": {
+        "high": "M3",
+        "partial": "M6"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "name": "GenAI resume screening pilot",
+    "context": [
+      "Your product team is launching a GenAI-powered resume screening platform for a major recruiting firm.",
+      "It's expected to go live within 2 weeks in a pilot with real candidate data.",
+      "At the last moment:"
+    ],
+    "list": [
+      "A news article questions the ethical fairness of your AI model.",
+      "The client asks for a “gender-neutrality” audit before go-live.",
+      "Your internal ethics team is unavailable due to a cybersecurity incident elsewhere.",
+      "The core AI model is producing inconsistent results for multilingual resumes.",
+      "The business insists on going live to meet a demo commitment with their investors."
+    ],
+    "risks": [
+      {
+        "id": "R1",
+        "d": "AI bias accusation damages brand reputation"
+      },
+      {
+        "id": "R2",
+        "d": "Model fails to handle resumes in regional languages"
+      },
+      {
+        "id": "R3",
+        "d": "Gender fairness audit fails or is incomplete"
+      },
+      {
+        "id": "R4",
+        "d": "Cybersecurity incident drains internal audit resources"
+      },
+      {
+        "id": "R5",
+        "d": "Business pushes go-live regardless of risk readiness"
+      }
+    ],
+    "mits": [
+      {
+        "id": "M1",
+        "d": "Engage external firm for short-term cyber advisory & backup compliance resource",
+        "p": 3000
+      },
+      {
+        "id": "M2",
+        "d": "Conduct fairness checks using open-source gender de-biasing tool",
+        "p": 2500
+      },
+      {
+        "id": "M3",
+        "d": "Hold internal go/no-go meeting with legal + branding team",
+        "p": 1000
+      },
+      {
+        "id": "M4",
+        "d": "Hire external AI ethics consultant to conduct rapid audit",
+        "p": 4000
+      },
+      {
+        "id": "M5",
+        "d": "Add disclaimer for AI decisions in onboarding flow",
+        "p": 1500
+      },
+      {
+        "id": "M6",
+        "d": "Revert to earlier stable AI model trained only on English data",
+        "p": 2000
+      },
+      {
+        "id": "M7",
+        "d": "Temporarily disable multilingual support & flag it as known limitation in pilot",
+        "p": 2000
+      }
+    ],
+    "map": {
+      "R1": {
+        "high": "M4",
+        "partial": "M3"
+      },
+      "R2": {
+        "high": "M7",
+        "partial": "M6"
+      },
+      "R3": {
+        "high": "M2",
+        "partial": "M4"
+      },
+      "R4": {
+        "high": "M1",
+        "partial": "M2"
+      },
+      "R5": {
+        "high": "M3",
+        "partial": "M5"
+      }
+    }
+  },
+  {
+    "id": 3,
+    "name": "CRM migration after a merger",
+    "context": [
+      "Your product and engineering team is migrating user data into a new unified CRM system as part of a company merger.",
+      "You have 6 weeks to complete the migration, and stakeholders from both organizations are demanding new features and dashboard redesigns during the same period.",
+      "Unfortunately, the user data is scattered, inconsistent, and managed differently across platforms.",
+      "Meanwhile, leadership wants a board-level demo before the next quarter."
+    ],
+    "list": null,
+    "risks": [
+      {
+        "id": "R1",
+        "d": "Data migration fails due to incompatible schemas"
+      },
+      {
+        "id": "R2",
+        "d": "Your top engineers are pulled off the project by HR post-merger"
+      },
+      {
+        "id": "R3",
+        "d": "Stakeholders insist on last-minute UI and analytics changes"
+      },
+      {
+        "id": "R4",
+        "d": "Analytics module causes duplication and misreporting"
+      },
+      {
+        "id": "R5",
+        "d": "Users experience downtime during CRM migration and start churning"
+      },
+      {
+        "id": "R6",
+        "d": "Board insists on live demo before system is ready"
+      }
+    ],
+    "mits": [
+      {
+        "id": "M1",
+        "d": "Secure written resource lock-in from HR",
+        "p": 2000
+      },
+      {
+        "id": "M2",
+        "d": "Use synthetic test data to validate migrated records across systems",
+        "p": 1500
+      },
+      {
+        "id": "M3",
+        "d": "Implement a stakeholder change freeze until migration is complete",
+        "p": 1500
+      },
+      {
+        "id": "M4",
+        "d": "Prepare a staged cutover with rollback plan and downtime alerts",
+        "p": 2000
+      },
+      {
+        "id": "M5",
+        "d": "Create a pre-recorded product walkthrough for board demo",
+        "p": 1800
+      },
+      {
+        "id": "M6",
+        "d": "Hire a data architect to create mapping & reconciliation plan",
+        "p": 4000
+      },
+      {
+        "id": "M7",
+        "d": "Isolate analytics module in sandbox environment",
+        "p": 2500
+      }
+    ],
+    "map": {
+      "R1": {
+        "high": "M6",
+        "partial": "M2"
+      },
+      "R2": {
+        "high": "M1",
+        "partial": "M6"
+      },
+      "R3": {
+        "high": "M3",
+        "partial": "M7"
+      },
+      "R4": {
+        "high": "M7",
+        "partial": "M2"
+      },
+      "R5": {
+        "high": "M4",
+        "partial": "M3"
+      },
+      "R6": {
+        "high": "M5",
+        "partial": "M4"
+      }
+    }
+  },
+  {
+    "id": 4,
+    "name": "Retail checkout before peak weekend",
+    "context": [
+      "Your engineering team is rolling out a new checkout and inventory system for a national retail chain, going live 3 weeks before the biggest sale weekend of the year.",
+      "Marketing has already announced the sale date publicly and the CEO will not move it.",
+      "A critical security patch was released for the payment library you depend on.",
+      "Your warehouse partner is migrating to a new logistics API in the same window, and support staff have not been trained on the new order flow."
+    ],
+    "list": null,
+    "risks": [
+      {
+        "id": "R1",
+        "d": "Checkout fails under peak sale traffic"
+      },
+      {
+        "id": "R2",
+        "d": "Unpatched payment library exposes a known security vulnerability"
+      },
+      {
+        "id": "R3",
+        "d": "Warehouse partner's new logistics API breaks order fulfilment"
+      },
+      {
+        "id": "R4",
+        "d": "Untrained support staff cannot handle customer issues at peak"
+      },
+      {
+        "id": "R5",
+        "d": "Inventory counts go out of sync and the store oversells stock"
+      },
+      {
+        "id": "R6",
+        "d": "Announced launch date cannot be moved even if the system is not ready"
+      }
+    ],
+    "mits": [
+      {
+        "id": "M1",
+        "d": "Run load and stress tests against peak traffic projections",
+        "p": 2500
+      },
+      {
+        "id": "M2",
+        "d": "Apply and regression-test the payment library security patch",
+        "p": 2000
+      },
+      {
+        "id": "M3",
+        "d": "Build a fallback integration to the warehouse partner's existing API",
+        "p": 3000
+      },
+      {
+        "id": "M4",
+        "d": "Run hands-on support training with a live order-flow simulation",
+        "p": 1200
+      },
+      {
+        "id": "M5",
+        "d": "Add real-time inventory reconciliation with oversell alerts",
+        "p": 2200
+      },
+      {
+        "id": "M6",
+        "d": "Prepare a feature-flagged rollout with instant rollback",
+        "p": 1800
+      },
+      {
+        "id": "M7",
+        "d": "Agree a phased launch scope with marketing in writing",
+        "p": 1500
+      },
+      {
+        "id": "M8",
+        "d": "Freeze all third-party integrations two weeks before the sale weekend",
+        "p": 1600
+      }
+    ],
+    "map": {
+      "R1": {
+        "high": "M1",
+        "partial": "M6"
+      },
+      "R2": {
+        "high": "M2",
+        "partial": "M6"
+      },
+      "R3": {
+        "high": "M3",
+        "partial": "M8"
+      },
+      "R4": {
+        "high": "M4",
+        "partial": "M7"
+      },
+      "R5": {
+        "high": "M5",
+        "partial": "M3"
+      },
+      "R6": {
+        "high": "M7",
+        "partial": "M8"
+      }
+    }
+  }
+]
